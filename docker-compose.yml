@@ -1,8 +1,0 @@
-services:
-  reactapp:
-    build: .
-    ports:
-      - "4000:3000"
-    volumes:
-      - "./reactapp:/app"
-    env_file: .env
