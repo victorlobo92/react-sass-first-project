@@ -12,11 +12,20 @@
   position: relative
   padding: 3rem 0
 
+  @media screen and (max-width: 1200px)
+    flex: 2 1 0
+
+  @media screen and (max-width: 500px)
+    padding: 3rem 1rem
+
   img
     max-width: 70%
     border-radius: variables.$container-border-radius
     position: absolute
     top: -3rem
+
+    @media screen and (max-width: 1200px)
+      max-width: 50%
 
   .title
     color: variables.$text-color-secondary
@@ -24,6 +33,9 @@
     border-radius: variables.$card-border-radius
     margin-top: 12rem
     padding: .8rem 1.2rem
+
+    @media screen and (max-width: 754px)
+      margin-top: 40vw
 
   .btn
     @include mixins.btn

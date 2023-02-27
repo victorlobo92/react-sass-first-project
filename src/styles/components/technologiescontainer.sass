@@ -14,8 +14,13 @@
       gap: 1rem
       padding: 1rem
       border: 1px solid #333
-      width: 45%
       border-radius: variables.$card-border-radius
+      flex: 0 1 calc(50% - 0.75rem)
+      max-width: calc(50% - 0.75rem)
+
+      @media screen and (max-width: 1000px)
+        flex: 1 1 100%
+        max-width: initial
 
       h3
         color: variables.$text-color
@@ -23,6 +28,9 @@
 
       svg
         font-size: 6rem
+
+        @media screen and (max-width: 1200px)
+          font-size: 4rem
 
     #html
       svg

@@ -1,5 +1,3 @@
-import '../styles/components/aboutcontainer.sass'
-
 export default function AboutContainer() {
   const experienceInYears = () => {
     const currentYear = new Date().getFullYear()
